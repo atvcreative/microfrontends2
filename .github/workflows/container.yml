@@ -6,6 +6,14 @@ on:
       - master
     paths:
       - "packages/container/**"
+  pull_request:
+    types: 
+      - opened
+      - synchronize
+    branches: 
+      - master
+    paths:
+      - "packages/container/**"
 
 defaults:
   run:
